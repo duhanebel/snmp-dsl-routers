@@ -1,0 +1,13 @@
+#Usage
+Change username/password and router IP on the py file.
+
+`tim_router_snmp.py` works with TIM broadband routers.
+`vodafone_router_snmp.py` works with Vodafone revolution station.
+
+Then update snmpd.conf with something like:
+`pass_persist .1.3.9950.1.1 /etc/snmp/tim_dsl.py`
+
+#Dependencies
+Make sure dependencies are installed system-wide. Depends on:
+- snmp_passpersist
+- lxml
